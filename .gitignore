@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build output (WXT)
+.output/
+.wxt/
+dist/
+
+# Local media used by the removed e2e harness. Not published, not regenerable.
+fixtures/
+spike-output/
+.spike-profile/
+.smoke-profile/
+
+# Internal notes and local assets. Kept locally, never published.
+docs/
+
+# Personal build helpers, not part of the published project.
+build.ps1
+build.cmd
+
+# Secrets and local overrides
+.env
+.env.*
+!.env.example
+
+# Packaging
+*.zip
+*.crx
+*.pem
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Tooling state
+.commandcode/

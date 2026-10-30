@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>ByteShark Video Downloader</title>
+</head>
+
+<body>
+  <!--
+      WXT 0.20 has no `offscreen` entrypoint type, so this page is emitted as an unlisted page and
+      opened via chrome.offscreen.createDocument({ url: 'offscreen.html' }). The body stays empty:
+      the document exists for the DOM + OPFS + URL.createObjectURL that a service worker lacks.
+    -->
+  <script type="module" src="./main.ts"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "background-video-downloader",
+  "description": "Chrome MV3 extension: silent MP4 + HLS download via offscreen document (WXT).",
+  "author": "SideFire",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "postinstall": "wxt prepare",
+    "compile": "tsc --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write ."
+  },
+  "dependencies": {
+    "m3u8-parser": "^7.2.0",
+    "mediabunny": "^1.42.0",
+    "preact": "^10.26.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.0",
+    "@preact/preset-vite": "^2.10.6",
+    "@types/chrome": "^0.0.287",
+    "typescript": "^5.6.3",
+    "wxt": "^0.20.0"
+  }
+}
